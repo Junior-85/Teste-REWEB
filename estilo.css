@@ -1,0 +1,124 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 120px 1fr 60px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #1867c0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    z-index: 1;
+    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 300;
+    font-size: 2.8rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size: 1.6rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    max-width: 95%;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    max-width: 100%; 
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    /* padding: 20px; */
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+    
+    }
+
+.rodape {
+    grid-area: rodape;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: #444;
+}
+
+table {
+    margin: 0 auto;
+    position: relative;
+    font-size: 0.8rem;
+    /* width: 900px; */
+    border-collapse: collapse;
+  }
+
+  /* #tabela thead th:nth-child(1){
+    
+    background-color: turquoise;
+} */
+
+th{
+    border: 1px solid black;
+    background-color: rgb(209, 204, 204);
+    /* width: 20px; */
+}
+
+td {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+/* tbody > tr:nth-child(2n){ 
+    background-color: rgb(222, 222, 243);
+} */
+
+thead > tr > th {
+    position: sticky;
+    background-color: rgb(209, 204, 204) ;
+    top: 0;
+}
+
+caption {
+    background-color: rgb(209, 204, 204);
+    border: 1px solid black;
+    font-size: 1.5rem;
+}
+
+input{
+    background-color: rgb(209, 204, 204);
+    border: none;
+    /* text-align: center; */
+    width: 50px;
+}
+/* 
+#tabela{
+    width: 100%;
+} */
